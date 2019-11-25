@@ -8,4 +8,4 @@ We started our work with help of our teacher Oleg Farenyuk. Firstly our Car was 
 Now we are working with second one. After first trial it didn\`t expload so we are going to continue working with it.
 ## First try
 As I have mentioned, our first trie was on the first driver, from 12V. here is the result.
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=lqymeNPksB4" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lqymeNPksB4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
