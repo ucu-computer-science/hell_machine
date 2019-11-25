@@ -8,3 +8,24 @@ We started our work with help of our teacher Oleg Farenyuk. Firstly our Car was 
 Now we are working with second one. After first trial it didn\`t expload so we are going to continue working with it.
 ## First try
 As I have mentioned, our first trie was on the first driver, from 12V. here is the [result](https://www.youtube.com/watch?v=lqymeNPksB4)
+___
+## TODO:
+|Until the presentation|Until the end of semester|Until the end of the year|
+|-|-|-|
+|describe the problem with the car| | |
+|describe what we have done| | |
+| make short description of our responsibilities for the future|finish the first part | |
+|make wheels to rotate|make car to drivers|make car to drive. every motor have to be independent.|
+| |make wheels to turn right-left|create a software for car to rotate back and front wheels independantly|
+|make a documentation to the car| the same|the same|
+|started working with sensors|work with sensors(at least 2 types)|work with all sensors|
+___
+## Description of the problem
+Not supported yet
+___
+## What we have done
+Not supported yet
+___
+## Documentation for the car
+___
+Not supported yet
