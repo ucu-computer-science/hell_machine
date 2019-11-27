@@ -37,7 +37,8 @@ It looks pretty close to the new Tesla track :) without any taste in "fornt-end"
 ![]()
 ### What is inside:
 #### Motors & Drivers:
-There are two types of the motors inside: four Brushless DC motors inside wheels and two DC motors. 
+There are two types of the motors inside: four Brushless DC motors inside wheels and two DC motors for turning the front and the back sides independently. Motors inside wheels - just simple BLDC from the hoverboard.
+And [here](http://www.handsontec.com/dataspecs/L298N%20Motor%20Driver.pdf) is the datasheet for the driver for turning motor.
 #### Encoders:
 Not supported yet
 #### Logic:
