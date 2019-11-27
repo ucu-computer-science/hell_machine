@@ -21,18 +21,24 @@ ___
 |started working with sensors|work with sensors(at least 2 types)|work with all sensors|
 ___
 ## Description of the problem
-Not supported yet
+In the University, on the Applied Science Faculty, we have a car. Our previous year students started doing it in the SoftServe company, but their success was not big, so teachers decided to take it to the University. So now we with Yura are working with it.
 ___
 ## What we have done
-Not supported yet
+- learned how pwm works
+- rotated the servo drive
+- rotated the step motor
+- rotated small BLDC motor using PWM (back and force, with different speed, quick stop and with deckoding of the speed signal)
+- started documentation.
+- changed one driver (explode previose one).
+- understand for sure how does the car works.
 ___
 ## Documentation for the car
 ### How is it looks like:
 It looks pretty close to the new Tesla track :) without any taste in "fornt-end" but with big possibilities in "back-end".
 ![]()
 ### What is inside:
-#### Motors:
-There are two types of the motors inside: four Brushless DC motors and two DC motors
+#### Motors & Drivers:
+There are two types of the motors inside: four Brushless DC motors inside wheels and two DC motors. 
 #### Encoders:
 Not supported yet
 #### Logic:
@@ -40,11 +46,10 @@ Not supported yet
 #### Sensors:
 Not supported yet
 #### Power:
-Not supported yet
+we have two bataries 36V for BLDC mottors in the wheels and two bateries 12V for everything else.
 #### Magic things(in plans to understand)
 Not supported yet
 ___
-
 
 # Additiona
 [here](https://docs.google.com/spreadsheets/d/13Saorbgh8zXmlXp2oCmv79j6O5-RJ3W5ENbF93QNehc/edit?ts=5dde4f19#gid=0) google table
