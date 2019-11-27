@@ -27,5 +27,21 @@ ___
 Not supported yet
 ___
 ## Documentation for the car
-___
+### How is it looks like:
+It looks pretty close to the new Tesla track :) without any taste in "fornt-end" but with big possibilities in "back-end".
+![]()
+### What is inside:
+#### Motors:
+There are two types of the motors inside: four Brushless DC motors and two DC motors
+#### Encoders:
 Not supported yet
+#### Logic:
+Not supported yet
+#### Sensors:
+Not supported yet
+#### Power:
+Not supported yet
+#### Magic things(in plans to understand)
+Not supported yet
+___
+
