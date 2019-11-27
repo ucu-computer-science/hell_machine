@@ -45,3 +45,9 @@ Not supported yet
 Not supported yet
 ___
 
+
+# Additiona
+[here](https://docs.google.com/spreadsheets/d/13Saorbgh8zXmlXp2oCmv79j6O5-RJ3W5ENbF93QNehc/edit?ts=5dde4f19#gid=0) google table
+[here](https://github.com/ucuapps/robert_the_robot) one git of prev course
+[here](https://github.com/NiklasFauth/hoverboard-firmware-hack) general git of things like this
+
