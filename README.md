@@ -4,7 +4,7 @@
 ---
 ## Begin
 
-We started our work with the help of our teacher Oleg Farenyuk. Firstly our Car was like a dying monster without any functions. Mr. Oleg bought us a few drivers to work with it: the [first](http://grauonline.de/wordpress/?page_id=3122) and the [second](https://ru.aliexpress.com/item/32950460565.html?spm=a2g0o.detail.1000014.33.280374eaN0gGtG&gps-id=pcDetailBottomMoreOtherSeller&scm=1007.13338.128125.0&scm_id=1007.13338.128125.0&scm-url=1007.13338.128125.0&pvid=e700e67a-c0ac-406b-9729-c6caa390c35d). The first one is up to 36V, but it is cheap Chinees driver, so it exploded. For Voltage less then 25V, it is an excellent driver for Brushless DC motors. Now we are working with the second one. After the first tests, it didn\`t explode, so we are going to continue working with it.
+We started our work with the help of our teacher Oleg Farenyuk. Firstly our Car was like a dying monster without any functions. Mr Oleg bought us a few drivers to work with it: the [first](http://grauonline.de/wordpress/?page_id=3122) and the [second](https://ru.aliexpress.com/item/32950460565.html?spm=a2g0o.detail.1000014.33.280374eaN0gGtG&gps-id=pcDetailBottomMoreOtherSeller&scm=1007.13338.128125.0&scm_id=1007.13338.128125.0&scm-url=1007.13338.128125.0&pvid=e700e67a-c0ac-406b-9729-c6caa390c35d). The first one is up to 36V, but it is cheap Chinees driver, so it exploded. For Voltage less then 25V, it is an excellent driver for Brushless DC motors. Now we are working with the second one. After the first tests, it didn\`t explode, so we are going to continue working with it.
 ## First try
 As I have mentioned, our first try was on the first driver for 12V. Here you can view the [result](https://www.youtube.com/watch?v=lqymeNPksB4)
 ___
@@ -50,8 +50,10 @@ We have two batteries 36V for BLDC motors in the wheels and two batteries 12V fo
 #### Magic things(in plans to understand)
 Not supported yet
 ___
+# ROS
+We started working with the Robotic Operation System
 
-# Additiona
+# Additional
 [here](https://docs.google.com/spreadsheets/d/13Saorbgh8zXmlXp2oCmv79j6O5-RJ3W5ENbF93QNehc/edit?ts=5dde4f19#gid=0) google table
 [here](https://github.com/ucuapps/robert_the_robot) one git of prev course
 [here](https://github.com/NiklasFauth/hoverboard-firmware-hack) general git of things like this
