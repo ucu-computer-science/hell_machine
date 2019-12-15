@@ -1,0 +1,8 @@
+#include "usart.h"
+
+uint8_t byte;
+UART_HandleTypeDef huart2;
+uint8_t byte_2;
+volatile HAL_StatusTypeDef r;
+unsigned char str1[100] = "NOT STR\n";
+unsigned char str2[100] = "STR\n";
