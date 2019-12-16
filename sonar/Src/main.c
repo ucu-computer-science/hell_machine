@@ -26,7 +26,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "sonar.h"
+#include <string.h>
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -53,30 +55,23 @@
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 uint8_t byte;
-UART_HandleTypeDef huart2;
+uint32_t result = 10000000;
+//UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PFP */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
- if( GPIO_Pin == GPIO_PIN_1)
+ if( GPIO_Pin == GPIO_PIN_11)
  {
-  static uint32_t last_change_tick;
-  if( HAL_GetTick() - last_change_tick < 50 )
-  {
-   return;
-  }
-  last_change_tick = HAL_GetTick();
-  HAL_UART_Transmit(&huart2, &byte, 1, 100);
- }
-}
-
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-{
-  if (huart->Instance == USART2)
-  {
-    HAL_UART_Transmit(&huart2, &byte, 1, 100);
-    HAL_UART_Receive_IT(&huart2, &byte, 1);
-  }
+	 if (HAL_GPIO_ReadPin(ECHO_GPIO_Port, ECHO_Pin) == GPIO_PIN_SET) {
+		 TIM11_reinit();
+	 }
+	 else {
+		 result = get_tim11_us()*343/2000;
+//		 result = get_tim11_us();
+//		 result = get_tim11_us()/58;
+	 	 }
+ 	 }
 }
 /* USER CODE END PFP */
 
@@ -116,6 +111,7 @@ int main(void)
   MX_GPIO_Init();
   MX_TIM4_Init();
   MX_USART2_UART_Init();
+  MX_TIM11_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
 
@@ -124,12 +120,16 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   HAL_UART_Receive_IT(&huart2, &byte, 1);
+  	char pow_res[100];
+
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15, GPIO_PIN_SET);
+	  sprintf(pow_res, "res %lu\n", result);
+	  HAL_UART_Transmit(&huart2, pow_res, strlen((char*)pow_res), 100);
+	 HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15, GPIO_PIN_SET);
 	 HAL_Delay(100);
 	 HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15, GPIO_PIN_RESET);
 	 HAL_Delay(100);

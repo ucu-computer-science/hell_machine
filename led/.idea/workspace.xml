@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ae04f542-712c-4b8e-b5b9-1a5e97898c3c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/led.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/OCD_led.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/Backup/main.h.bak" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/Backup/main.h.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/Backup/stm32f4xx_hal_conf.h.bak" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/Backup/stm32f4xx_hal_conf.h.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/Backup/stm32f4xx_it.h.bak" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/Backup/stm32f4xx_it.h.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/Backup/tim.h.bak" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/Backup/tim.h.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/stm32f4xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/stm32f4xx_it.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/tim.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/tim.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/Backup/gpio.c.bak" beforeDir="false" afterPath="$PROJECT_DIR$/Src/Backup/gpio.c.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/Backup/main.c.bak" beforeDir="false" afterPath="$PROJECT_DIR$/Src/Backup/main.c.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/Backup/stm32f4xx_hal_msp.c.bak" beforeDir="false" afterPath="$PROJECT_DIR$/Src/Backup/stm32f4xx_hal_msp.c.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/Backup/stm32f4xx_it.c.bak" beforeDir="false" afterPath="$PROJECT_DIR$/Src/Backup/stm32f4xx_it.c.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/Backup/tim.c.bak" beforeDir="false" afterPath="$PROJECT_DIR$/Src/Backup/tim.c.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/gpio.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/stm32f4xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/stm32f4xx_it.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/tim.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/tim.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/led.ioc" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="LeOzqzSy" />
+  </component>
+  <component name="ProjectId" id="1V4QNNmycaYii997T5SxnmNPTsf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae04f542-712c-4b8e-b5b9-1a5e97898c3c" name="Default Changelist" comment="" />
+      <created>1576509847296</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576509847296</updated>
+      <workItem from="1576509851756" duration="28000" />
+      <workItem from="1576511914808" duration="18000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1694" y="145" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576509874696">
+      <screen x="1280" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1694" y="145" key="#com.intellij.execution.impl.EditConfigurationsDialog/1280.0.1920.1080/0.27.1280.997@1280.0.1920.1080" timestamp="1576509874696" />
+    <state x="370" y="226" width="530" height="599" key="FileChooserDialogImpl" timestamp="1576511931311">
+      <screen x="0" y="27" width="1280" height="997" />
+    </state>
+    <state x="370" y="226" width="530" height="599" key="FileChooserDialogImpl/1280.0.1920.1080/0.27.1280.997@0.27.1280.997" timestamp="1576511931311" />
+  </component>
+</project>

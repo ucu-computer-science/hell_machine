@@ -1,0 +1,175 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/arm-none-eabi-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o): in function `exit':
+exit.c:(.text.exit+0x2c): undefined reference to `_exit'
+collect2: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/arm-none-eabi-g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o): in function `exit':
+exit.c:(.text.exit+0x2c): undefined reference to `_exit'
+collect2: error: ld returned 1 exit status
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/myralllka/Documents/hell_machine/sonar/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1d313/fast && /usr/bin/make -f CMakeFiles/cmTC_1d313.dir/build.make CMakeFiles/cmTC_1d313.dir/build
+make[1]: Entering directory '/home/myralllka/Documents/hell_machine/sonar/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1d313.dir/CMakeCCompilerABI.c.obj
+/usr/bin/arm-none-eabi-gcc   -mcpu=cortex-m4  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -u _printf_float -u _scanf_float -std=gnu99    -v -o CMakeFiles/cmTC_1d313.dir/CMakeCCompilerABI.c.obj   -c /opt/clion/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+Reading specs from /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/nosys.specs
+rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
+Reading specs from /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/nano.specs
+rename spec link to nano_link
+rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence
+rename spec cpp_unique_options to nano_cpp_unique_options
+COLLECT_GCC=/usr/bin/arm-none-eabi-gcc
+Target: arm-none-eabi
+Configured with: /build/arm-none-eabi-gcc/src/gcc-9.2.0/configure --target=arm-none-eabi --prefix=/usr --with-sysroot=/usr/arm-none-eabi --with-native-system-header-dir=/include --libexecdir=/usr/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/usr/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect-function --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='Arch Repository' --with-bugurl=https://bugs.archlinux.org/ --with-multilib-list=rmprofile
+Thread model: single
+gcc version 9.2.0 (Arch Repository) 
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-u' '_printf_float' '-u' '_scanf_float' '-std=gnu99' '-v' '-o' 'CMakeFiles/cmTC_1d313.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7e-m'
+ /usr/lib/gcc/arm-none-eabi/9.2.0/cc1 -isystem =/include/newlib-nano -quiet -v -imultilib thumb/v7e-m/nofp -D__USES_INITFINI__ /opt/clion/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m4 -mthumb -mthumb-interwork -mfloat-abi=soft -march=armv7e-m -auxbase-strip CMakeFiles/cmTC_1d313.dir/CMakeCCompilerABI.c.obj -g -std=gnu99 -version -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -o /tmp/cc2TrEXv.s
+GNU C99 (Arch Repository) version 9.2.0 (arm-none-eabi)
+	compiled by GNU C version 9.1.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.21-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/arm-none-eabi/usr/local/include"
+ignoring duplicate directory "/usr/arm-none-eabi/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/arm-none-eabi/include/newlib-nano
+ /usr/lib/gcc/arm-none-eabi/9.2.0/include
+ /usr/lib/gcc/arm-none-eabi/9.2.0/include-fixed
+ /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/include
+End of search list.
+GNU C99 (Arch Repository) version 9.2.0 (arm-none-eabi)
+	compiled by GNU C version 9.1.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.21-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 8418d054ef1132164162f49241073d79
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-u' '_printf_float' '-u' '_scanf_float' '-std=gnu99' '-v' '-o' 'CMakeFiles/cmTC_1d313.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7e-m'
+ /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/bin/as -v -march=armv7e-m -mthumb-interwork -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_1d313.dir/CMakeCCompilerABI.c.obj /tmp/cc2TrEXv.s
+GNU assembler version 2.33.1 (arm-none-eabi) using BFD version (GNU Binutils) 2.33.1
+COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/9.2.0/:/usr/lib/gcc/arm-none-eabi/9.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/9.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/9.2.0/thumb/v7e-m/nofp/:/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/:/usr/arm-none-eabi/lib/thumb/v7e-m/nofp/:/usr/lib/gcc/arm-none-eabi/9.2.0/:/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-u' '_printf_float' '-u' '_scanf_float' '-std=gnu99' '-v' '-o' 'CMakeFiles/cmTC_1d313.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7e-m'
+Linking C executable cmTC_1d313
+/opt/clion/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d313.dir/link.txt --verbose=1
+/usr/bin/arm-none-eabi-gcc -mcpu=cortex-m4  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -u _printf_float -u _scanf_float -std=gnu99   -Wl,-gc-sections,--print-memory-usage -T /home/myralllka/Documents/hell_machine/sonar/STM32F303VCTx_FLASH.ld -v CMakeFiles/cmTC_1d313.dir/CMakeCCompilerABI.c.obj  -o cmTC_1d313 
+Using built-in specs.
+Reading specs from /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/nosys.specs
+rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
+Reading specs from /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/nano.specs
+rename spec link to nano_link
+rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence
+rename spec cpp_unique_options to nano_cpp_unique_options
+COLLECT_GCC=/usr/bin/arm-none-eabi-gcc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-none-eabi/9.2.0/lto-wrapper
+Target: arm-none-eabi
+Configured with: /build/arm-none-eabi-gcc/src/gcc-9.2.0/configure --target=arm-none-eabi --prefix=/usr --with-sysroot=/usr/arm-none-eabi --with-native-system-header-dir=/include --libexecdir=/usr/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/usr/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect-function --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='Arch Repository' --with-bugurl=https://bugs.archlinux.org/ --with-multilib-list=rmprofile
+Thread model: single
+gcc version 9.2.0 (Arch Repository) 
+COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/9.2.0/:/usr/lib/gcc/arm-none-eabi/9.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/9.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/9.2.0/thumb/v7e-m/nofp/:/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/:/usr/arm-none-eabi/lib/thumb/v7e-m/nofp/:/usr/lib/gcc/arm-none-eabi/9.2.0/:/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-u' '_printf_float' '-u' '_scanf_float' '-std=gnu99' '-T' '/home/myralllka/Documents/hell_machine/sonar/STM32F303VCTx_FLASH.ld' '-v' '-o' 'cmTC_1d313' '-mfloat-abi=soft' '-march=armv7e-m'
+ /usr/lib/gcc/arm-none-eabi/9.2.0/collect2 -plugin /usr/lib/gcc/arm-none-eabi/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-none-eabi/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwER13S.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lg_nano -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys --sysroot=/usr/arm-none-eabi -X -o cmTC_1d313 -u _printf_float -u _scanf_float /usr/lib/gcc/arm-none-eabi/9.2.0/thumb/v7e-m/nofp/crti.o /usr/lib/gcc/arm-none-eabi/9.2.0/thumb/v7e-m/nofp/crtbegin.o /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o -L/usr/lib/gcc/arm-none-eabi/9.2.0/thumb/v7e-m/nofp -L/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp -L/usr/arm-none-eabi/lib/thumb/v7e-m/nofp -L/usr/lib/gcc/arm-none-eabi/9.2.0 -L/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib -L/usr/arm-none-eabi/lib -gc-sections --print-memory-usage CMakeFiles/cmTC_1d313.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lg_nano -lc_nano --end-group --start-group -lgcc -lc_nano -lnosys --end-group --start-group -lgcc -lc_nano -lnosys --end-group /usr/lib/gcc/arm-none-eabi/9.2.0/thumb/v7e-m/nofp/crtend.o /usr/lib/gcc/arm-none-eabi/9.2.0/thumb/v7e-m/nofp/crtn.o -T /home/myralllka/Documents/hell_machine/sonar/STM32F303VCTx_FLASH.ld
+/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/bin/ld: cannot open linker script file /home/myralllka/Documents/hell_machine/sonar/STM32F303VCTx_FLASH.ld: No such file or directory
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_1d313.dir/build.make:87: cmTC_1d313] Error 1
+make[1]: Leaving directory '/home/myralllka/Documents/hell_machine/sonar/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_1d313/fast] Error 2
+
+
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /home/myralllka/Documents/hell_machine/sonar/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_135cb/fast && /usr/bin/make -f CMakeFiles/cmTC_135cb.dir/build.make CMakeFiles/cmTC_135cb.dir/build
+make[1]: Entering directory '/home/myralllka/Documents/hell_machine/sonar/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_135cb.dir/CMakeCXXCompilerABI.cpp.obj
+/usr/bin/arm-none-eabi-g++    -mcpu=cortex-m4  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -u _printf_float -u _scanf_float -std=c++11    -v -o CMakeFiles/cmTC_135cb.dir/CMakeCXXCompilerABI.cpp.obj -c /opt/clion/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+Reading specs from /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/nosys.specs
+rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
+Reading specs from /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/nano.specs
+rename spec link to nano_link
+rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence
+rename spec cpp_unique_options to nano_cpp_unique_options
+COLLECT_GCC=/usr/bin/arm-none-eabi-g++
+Target: arm-none-eabi
+Configured with: /build/arm-none-eabi-gcc/src/gcc-9.2.0/configure --target=arm-none-eabi --prefix=/usr --with-sysroot=/usr/arm-none-eabi --with-native-system-header-dir=/include --libexecdir=/usr/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/usr/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect-function --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='Arch Repository' --with-bugurl=https://bugs.archlinux.org/ --with-multilib-list=rmprofile
+Thread model: single
+gcc version 9.2.0 (Arch Repository) 
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-u' '_printf_float' '-u' '_scanf_float' '-std=c++11' '-v' '-o' 'CMakeFiles/cmTC_135cb.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7e-m'
+ /usr/lib/gcc/arm-none-eabi/9.2.0/cc1plus -isystem =/include/newlib-nano -quiet -v -imultilib thumb/v7e-m/nofp -D__USES_INITFINI__ /opt/clion/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=cortex-m4 -mthumb -mthumb-interwork -mfloat-abi=soft -march=armv7e-m -auxbase-strip CMakeFiles/cmTC_135cb.dir/CMakeCXXCompilerABI.cpp.obj -g -std=c++11 -version -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -o /tmp/ccAQ3x3r.s
+GNU C++11 (Arch Repository) version 9.2.0 (arm-none-eabi)
+	compiled by GNU C version 9.1.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.21-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/arm-none-eabi/usr/local/include"
+ignoring duplicate directory "/usr/arm-none-eabi/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/arm-none-eabi/include/newlib-nano
+ /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/include/c++/9.2.0
+ /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/include/c++/9.2.0/arm-none-eabi/thumb/v7e-m/nofp
+ /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/include/c++/9.2.0/backward
+ /usr/lib/gcc/arm-none-eabi/9.2.0/include
+ /usr/lib/gcc/arm-none-eabi/9.2.0/include-fixed
+ /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/include
+End of search list.
+GNU C++11 (Arch Repository) version 9.2.0 (arm-none-eabi)
+	compiled by GNU C version 9.1.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.21-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 052308ea3b52c244d376c5003e354142
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-u' '_printf_float' '-u' '_scanf_float' '-std=c++11' '-v' '-o' 'CMakeFiles/cmTC_135cb.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7e-m'
+ /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/bin/as -v -march=armv7e-m -mthumb-interwork -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_135cb.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccAQ3x3r.s
+GNU assembler version 2.33.1 (arm-none-eabi) using BFD version (GNU Binutils) 2.33.1
+COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/9.2.0/:/usr/lib/gcc/arm-none-eabi/9.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/9.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/9.2.0/thumb/v7e-m/nofp/:/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/:/usr/arm-none-eabi/lib/thumb/v7e-m/nofp/:/usr/lib/gcc/arm-none-eabi/9.2.0/:/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-u' '_printf_float' '-u' '_scanf_float' '-std=c++11' '-v' '-o' 'CMakeFiles/cmTC_135cb.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7e-m'
+Linking CXX executable cmTC_135cb
+/opt/clion/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_135cb.dir/link.txt --verbose=1
+/usr/bin/arm-none-eabi-g++  -mcpu=cortex-m4  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -u _printf_float -u _scanf_float -std=c++11   -Wl,-gc-sections,--print-memory-usage -T /home/myralllka/Documents/hell_machine/sonar/STM32F303VCTx_FLASH.ld -v CMakeFiles/cmTC_135cb.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_135cb 
+Using built-in specs.
+Reading specs from /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/nosys.specs
+rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
+Reading specs from /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/nano.specs
+rename spec link to nano_link
+rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence
+rename spec cpp_unique_options to nano_cpp_unique_options
+COLLECT_GCC=/usr/bin/arm-none-eabi-g++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-none-eabi/9.2.0/lto-wrapper
+Target: arm-none-eabi
+Configured with: /build/arm-none-eabi-gcc/src/gcc-9.2.0/configure --target=arm-none-eabi --prefix=/usr --with-sysroot=/usr/arm-none-eabi --with-native-system-header-dir=/include --libexecdir=/usr/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/usr/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect-function --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='Arch Repository' --with-bugurl=https://bugs.archlinux.org/ --with-multilib-list=rmprofile
+Thread model: single
+gcc version 9.2.0 (Arch Repository) 
+COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/9.2.0/:/usr/lib/gcc/arm-none-eabi/9.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/9.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/9.2.0/thumb/v7e-m/nofp/:/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/:/usr/arm-none-eabi/lib/thumb/v7e-m/nofp/:/usr/lib/gcc/arm-none-eabi/9.2.0/:/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-u' '_printf_float' '-u' '_scanf_float' '-std=c++11' '-T' '/home/myralllka/Documents/hell_machine/sonar/STM32F303VCTx_FLASH.ld' '-v' '-o' 'cmTC_135cb' '-mfloat-abi=soft' '-march=armv7e-m'
+ /usr/lib/gcc/arm-none-eabi/9.2.0/collect2 -plugin /usr/lib/gcc/arm-none-eabi/9.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-none-eabi/9.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvWTaHL.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lg_nano -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys --sysroot=/usr/arm-none-eabi -X -o cmTC_135cb -u _printf_float -u _scanf_float /usr/lib/gcc/arm-none-eabi/9.2.0/thumb/v7e-m/nofp/crti.o /usr/lib/gcc/arm-none-eabi/9.2.0/thumb/v7e-m/nofp/crtbegin.o /usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o -L/usr/lib/gcc/arm-none-eabi/9.2.0/thumb/v7e-m/nofp -L/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp -L/usr/arm-none-eabi/lib/thumb/v7e-m/nofp -L/usr/lib/gcc/arm-none-eabi/9.2.0 -L/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/lib -L/usr/arm-none-eabi/lib -gc-sections --print-memory-usage CMakeFiles/cmTC_135cb.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++_nano -lm --start-group -lgcc -lg_nano -lc_nano --end-group --start-group -lgcc -lc_nano -lnosys --end-group --start-group -lgcc -lc_nano -lnosys --end-group /usr/lib/gcc/arm-none-eabi/9.2.0/thumb/v7e-m/nofp/crtend.o /usr/lib/gcc/arm-none-eabi/9.2.0/thumb/v7e-m/nofp/crtn.o -T /home/myralllka/Documents/hell_machine/sonar/STM32F303VCTx_FLASH.ld
+/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/bin/ld: cannot open linker script file /home/myralllka/Documents/hell_machine/sonar/STM32F303VCTx_FLASH.ld: No such file or directory
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_135cb.dir/build.make:87: cmTC_135cb] Error 1
+make[1]: Leaving directory '/home/myralllka/Documents/hell_machine/sonar/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_135cb/fast] Error 2
+
+
+
+

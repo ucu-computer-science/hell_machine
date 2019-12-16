@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="sonar" targetName="sonar.elf" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -9,10 +11,50 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7b6d4a0-6a26-4c72-b77d-bc0d0116b8a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../lab1stm/servo/.settings/language.settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1stm/servo/.settings/language.settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab1stm/servo/servo Run.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1stm/servo/servo Run.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../morgunenko_midl/src/function.c" beforeDir="false" afterPath="$PROJECT_DIR$/../morgunenko_midl/src/function.c" afterDir="false" />
+    <list default="true" id="54763407-0351-420b-b03b-c993df63aa71" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/hell_machine.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../led/.idea/sonar.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/OCD_sonar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonar.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cproject" beforeDir="false" afterPath="$PROJECT_DIR$/.cproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/led.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/OCD_led.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/language.settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/language.settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/Backup/gpio.h.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/Backup/main.h.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/Backup/stm32f4xx_hal_conf.h.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/Backup/stm32f4xx_it.h.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/Backup/sys.h.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/Backup/tim.h.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/stm32f4xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/stm32f4xx_it.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/tim.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/tim.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/STM32F3DISCOVERY.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/Backup/gpio.c.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/Backup/main.c.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/Backup/stm32f4xx_hal_msp.c.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/Backup/stm32f4xx_it.c.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/Backup/sys.c.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/Backup/syscalls.c.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/Backup/system_stm32f4xx.c.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/Backup/tim.c.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/gpio.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/stm32f4xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/stm32f4xx_it.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/tim.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/tim.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/led Run.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led.ioc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/led.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,13 +64,14 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="aZzoZntw" />
+    <option name="directoryName" value="GvevkLYr" />
   </component>
-  <component name="ProjectId" id="1UylJjzLD3zhYDBKSyv7SMbPTyn" />
+  <component name="ProjectId" id="1V4diKB4GgZKmlL6zsuzMk7ZOIR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,9 +80,25 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.cidr.embedded.config" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Inc" />
+    </key>
+  </component>
+  <component name="RunManager" selected="OpenOCD Download &amp; Run.OCD sonar">
+    <configuration name="sonar.elf" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sonar" TARGET_NAME="sonar.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sonar" RUN_TARGET_NAME="sonar.elf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.sonar.elf" />
+      <item itemvalue="OpenOCD Download &amp; Run.OCD sonar" />
+    </list>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -58,26 +117,16 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c7b6d4a0-6a26-4c72-b77d-bc0d0116b8a6" name="Default Changelist" comment="" />
-      <created>1576336645817</created>
+      <changelist id="54763407-0351-420b-b03b-c993df63aa71" name="Default Changelist" comment="" />
+      <created>1576516426543</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1576336645817</updated>
-      <workItem from="1576336647445" duration="64000" />
+      <updated>1576516426543</updated>
+      <workItem from="1576516428631" duration="626000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1694" y="145" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576336659305">
-      <screen x="1280" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1694" y="145" key="#com.intellij.execution.impl.EditConfigurationsDialog/1280.0.1920.1080/0.27.1280.997@1280.0.1920.1080" timestamp="1576336659305" />
-    <state x="1605" y="101" width="1269" height="906" key="SettingsEditor" timestamp="1576336708160">
-      <screen x="1280" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1605" y="101" width="1269" height="906" key="SettingsEditor/1280.0.1920.1080/0.27.1280.997@1280.0.1920.1080" timestamp="1576336708160" />
   </component>
 </project>
