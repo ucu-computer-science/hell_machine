@@ -1,3 +1,4 @@
+# Components Table
 | Full Name of the Device | Short Name | Count | Image | Datashit | Voltage, V | Ampers, A | Power, W | Description
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |||||||||
