@@ -1,0 +1,3 @@
+/home/myralllka/Documents/hell_machine/4wheelsSTM32F411/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/myralllka/Documents/hell_machine/4wheelsSTM32F411/cmake-build-debug/CMakeFiles/4wheelsSTM32F411.elf.dir
+/home/myralllka/Documents/hell_machine/4wheelsSTM32F411/cmake-build-debug/CMakeFiles/edit_cache.dir

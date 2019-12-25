@@ -16,6 +16,9 @@
   *
   ******************************************************************************
   */
+#define and &&
+#define or ||
+#define not !
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
@@ -23,7 +26,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -55,39 +60,65 @@ static void MX_GPIO_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN PFP */
-uint8_t byte;
+inline void send_message(unsigned char message[]) {
+    HAL_UART_Transmit(&huart2, message, strlen((char *) message), 100);
+}
+
+inline void set_car_speed(uint8_t speed) {
+    TIM1->CCR1 = speed;
+}
+
+void start_car(void) {
+    for (int i = 0; i < 100; i++) {
+        set_car_speed(10);
+    }
+}
 UART_HandleTypeDef huart2;
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-{
-  if (huart->Instance == USART2)
-  {
-	  	  switch(byte) {
-	  	  case '1': {
-	  		  TIM1->CCR1 += 1;
-	  		  break;
-	  	  }
-	  	  case '2':{
-	  		  TIM1->CCR1 -= 1;
-	  		  break;
-	  	  }
-	  	  case '3':{
 
-	  		  break;
-	  	  }
-	  	  case '4': {
+uint8_t byte[];
+volatile uint8_t enable_car = 0;
+volatile uint8_t enable_back = 0;
+volatile int car_speed = 0;
+volatile uint8_t previous_car_speed = 0;
+unsigned char enabled[100] = "ENABLED\n";
+unsigned char disabled[100] = "DISABLED\n";
+unsigned char error[100] = "ERROR\n";
+char speed[100];
 
-	  		  break;
-	  	  }
-	  	  case '5': {
-
-	  		  break;
-	  	  }
-	  	  }
-//	  	  HAL_UART_Receive_IT(&huart2, &byte, 1);
-//
-    HAL_UART_Transmit(&huart2, &byte, 1, 100);
-    HAL_UART_Receive_IT(&huart2, &byte, 1);
-  }
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+	__disable_irq();
+    if (huart->Instance == USART2) {
+        switch (byte[0]) {
+            case 'D': {
+                enable_car = 1;
+                send_message(enabled);
+                break;
+            }
+            case 'd': {
+                enable_car = 0;
+                send_message(disabled);
+                set_car_speed(0);
+                break;
+            }
+            case 'A': {
+                if (enable_car == 0) break;
+                car_speed = (int) byte[1] - '0';
+                break;
+            }
+            default: {
+            	send_message(error);
+            }
+        }
+        if (enable_car == 1) {
+			if (previous_car_speed == 0 and car_speed != 0) start_car();
+			set_car_speed(car_speed + 2);
+			previous_car_speed = car_speed;
+			sprintf(speed, "SPEED: %d\n", car_speed);
+			send_message(speed);
+        }
+        __enable_irq();
+        HAL_UART_Receive_IT(&huart2, byte, 2);
+    }
 }
 /* USER CODE END PFP */
 
@@ -133,19 +164,15 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  HAL_UART_Receive_IT(&huart2, &byte, 1);
-  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-  TIM1->CCR1 = 2;
-  while (1)
-  {
+    HAL_UART_Receive_IT(&huart2, byte, 2);
+//  TIM1->CCR1 = 2;
+    while (1) {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-//	  HAL_GPIO_WritePin(GPIOE, GPIO_PIN_13, GPIO_PIN_RESET);
-//	    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, GPIO_PIN_SET);
-	  HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_15);
-	  HAL_Delay(500);
-  }
+        HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_15);
+        HAL_Delay(500);
+    }
   /* USER CODE END 3 */
 }
 
@@ -212,7 +239,7 @@ static void MX_TIM1_Init(void)
 
   /* USER CODE END TIM1_Init 1 */
   htim1.Instance = TIM1;
-  htim1.Init.Prescaler = 950;
+  htim1.Init.Prescaler = 959;
   htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim1.Init.Period = 10;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
@@ -347,7 +374,7 @@ static void MX_GPIO_Init(void)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
+    /* User can add his own implementation to report the HAL error return state */
 
   /* USER CODE END Error_Handler_Debug */
 }

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="whils_turn"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="whils_turn.elf">
+				<Option output="/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/whils_turn.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__weak=__attribute__((weak))"/>
+					<Add option="-D__packed=__attribute__((__packed__))"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F303xC"/>
+					<Add directory="/home/myralllka/Documents/hell_machine/whils_turn/Inc"/>
+					<Add directory="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc"/>
+					<Add directory="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Device/ST/STM32F3xx/Include"/>
+					<Add directory="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/include/c++/9.2.0"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/include/c++/9.2.0/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/include/c++/9.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/9.2.0/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/9.2.0/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 whils_turn.elf"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="whils_turn.elf/fast">
+				<Option output="/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/whils_turn.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__weak=__attribute__((weak))"/>
+					<Add option="-D__packed=__attribute__((__packed__))"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F303xC"/>
+					<Add directory="/home/myralllka/Documents/hell_machine/whils_turn/Inc"/>
+					<Add directory="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc"/>
+					<Add directory="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Device/ST/STM32F3xx/Include"/>
+					<Add directory="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/include/c++/9.2.0"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/include/c++/9.2.0/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/include/c++/9.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/9.2.0/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/9.2.0/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/9.2.0/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 whils_turn.elf/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma_ex.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_exti.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dma.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_exti.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash_ex.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/STM32F303VCTx_FLASH.ld">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/Backup/blootooth.c.bak">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/Backup/gpio.c.bak">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/Backup/main.c.bak">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/Backup/semihosting.c.bak">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/Backup/sh_cmd.s.bak">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/Backup/stm32f3xx_hal_msp.c.bak">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/Backup/stm32f3xx_it.c.bak">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/Backup/sys.c.bak">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/Backup/syscalls.c.bak">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/Backup/system_stm32f3xx.c.bak">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/Backup/tim.c.bak">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/Backup/usart.c.bak">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/gpio.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/main.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/semihosting.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/sh_cmd.s">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/stm32f3xx_hal_msp.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/stm32f3xx_it.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/sys.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/syscalls.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/system_stm32f3xx.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/tim.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/Src/usart.c">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/startup/startup_stm32f303xc.s">
+			<Option target="whils_turn.elf"/>
+		</Unit>
+		<Unit filename="/home/myralllka/Documents/hell_machine/whils_turn/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
