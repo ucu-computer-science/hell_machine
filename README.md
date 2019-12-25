@@ -11,9 +11,9 @@ All directories are System Workbench for STM32 projects (SW4STM32).
 * [4wheelsSTM32F411](https://github.com/Myralllka/hell_machine/tree/master/4wheelsSTM32F411) - 
 * [BCMotor](https://github.com/Myralllka/hell_machine/tree/master/BCMotor) - 
 * [led](https://github.com/Myralllka/hell_machine/tree/master/led) - 
-* [rotary_motor](https://github.com/Myralllka/hell_machine/tree/master/rotary_motor) - rotation of the wills with bluetooth (wthout angle conrol)
+* [rotary_motor](https://github.com/Myralllka/hell_machine/tree/master/rotary_motor) - rotation of the wheels with bluetooth (wthout angle conrol)
 * [sonar](https://github.com/Myralllka/hell_machine/tree/master/sonar) - usage of the [JSN-SR04T](https://www.roboter-bausatz.de/media/pdf/83/0f/93/JSN-SR04T_outputmode.pdf) (Ultrasonic double integration module; ultrasonic sensor).
-* [whils_turn](https://github.com/Myralllka/hell_machine/tree/master/whils_turn) - other varian of will turning
+* [whils_turn](https://github.com/Myralllka/hell_machine/tree/master/whils_turn) - other varian of wheel turning
 
 
 ## Documentation for the Car
