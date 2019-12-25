@@ -71,6 +71,6 @@ We started working with the Robotic Operation System. -->
 - Soldering skills
 
 # Additional
-* [Google table](https://docs.google.com/spreadsheets/d/13Saorbgh8zXmlXp2oCmv79j6O5-RJ3W5ENbF93QNehc/edit?ts=5dde4f19#gid=0) of all used materials of the project<br>
+* [List](https://github.com/Myralllka/hell_machine/wiki/Materials-List) of all used materials of the project<br>
 * [Git repository](https://github.com/ucuapps/robert_the_robot) of our preventors<br>
 * The inintial idea [source](https://github.com/NiklasFauth/hoverboard-firmware-hack)<br>
