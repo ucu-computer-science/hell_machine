@@ -14,12 +14,12 @@ All directories are System Workbench for STM32 projects (SW4STM32).
 * [rotary_motor](https://github.com/Myralllka/hell_machine/tree/master/rotary_motor) - rotation of the wheels with bluetooth (wthout angle conrol)
 * [sonar](https://github.com/Myralllka/hell_machine/tree/master/sonar) - usage of the [JSN-SR04T](https://www.roboter-bausatz.de/media/pdf/83/0f/93/JSN-SR04T_outputmode.pdf) (Ultrasonic double integration module; ultrasonic sensor).
 * [whils_turn](https://github.com/Myralllka/hell_machine/tree/master/whils_turn) - other varian of wheel turning
-
+* [supension](https://github.com/Myralllka/hell_machine/tree/master/supension) - aouto control of the supension (using ADC and interupts)
 
 ## Documentation for the Car
 | Characteristics | Description |
 | --------------- | :---------: |
-| Max Speed       | +0 m / s    |
+| Max Speed       | +10 m / s   |
 | Length          | +- 1.2 m    |
 | Width           | +- 0.4 m    |
 | Hight           | +- 0.3 m    |
