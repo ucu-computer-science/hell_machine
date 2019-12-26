@@ -19,12 +19,12 @@ All directories are System Workbench for STM32 projects (SW4STM32).
 ## Documentation for the Car
 | Characteristics | Description |
 | --------------- | :---------: |
-| Max Speed       | +10 m / s   |
+| Max Speed       | +- 5 m / s  |
 | Length          | +- 1.2 m    |
 | Width           | +- 0.4 m    |
 | Hight           | +- 0.3 m    |
-| Acum Capacity   | +- 2.0 Ah   |
-| Distance Ctrls. | +- 5.0 m    |
+| Acum Capacity   | +- ??? Ah   |
+| Distance Ctrls. | +- ??? m    |
 |                 |             |
 
 ### How is it looks like:
