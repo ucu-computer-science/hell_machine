@@ -14,7 +14,7 @@ All directories are System Workbench for STM32 projects (SW4STM32).
 * [rotary_motor](https://github.com/Myralllka/hell_machine/tree/master/rotary_motor) - rotation of the wheels with bluetooth (wthout angle conrol)
 * [sonar](https://github.com/Myralllka/hell_machine/tree/master/sonar) - usage of the [JSN-SR04T](https://www.roboter-bausatz.de/media/pdf/83/0f/93/JSN-SR04T_outputmode.pdf) (Ultrasonic double integration module; ultrasonic sensor).
 * [whils_turn](https://github.com/Myralllka/hell_machine/tree/master/whils_turn) - other varian of wheel turning
-* [supension](https://github.com/Myralllka/hell_machine/tree/master/supension) - aouto control of the supension (using ADC and interupts)
+* [supension](https://github.com/Myralllka/hell_machine/tree/master/supension) - auto control of the supension (using ADC and interupts)
 
 ## Documentation for the Car
 | Characteristics | Description |
@@ -29,7 +29,7 @@ All directories are System Workbench for STM32 projects (SW4STM32).
 
 ### How is it looks like:
 ### It looks pretty close to the new Tesla track :) without any taste in "front-end" but with strong possibilities in "back-end."<br>
-![top image](https://github.com/Myralllka/hell_machine/blob/master/Media/first_steps/photo_2019-11-27_23-41-37.jpg)
+![top image](https://drive.google.com/file/d/1U94w5piADHNLzKi0OwvMuK8d6Tnl2rWY/view?usp=sharing)
 ### [Schmetics](https://github.com/Myralllka/hell_machine/blob/master/schematic_hell_machine_wiring.pdf) of the wiering.<br>
 ![schematics](https://user-images.githubusercontent.com/44115554/71449843-2a1ad780-275f-11ea-8a52-69982922a718.png)
 ### How it moves on 20% of power.<br>
