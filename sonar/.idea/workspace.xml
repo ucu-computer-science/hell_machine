@@ -12,49 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54763407-0351-420b-b03b-c993df63aa71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/hell_machine.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../led/.idea/sonar.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/OCD_sonar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.cproject" beforeDir="false" afterPath="$PROJECT_DIR$/.cproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/led.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/OCD_led.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/language.settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/language.settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4wheelsSTM32F411/4wheelsSTM32F411.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/../4wheelsSTM32F411/4wheelsSTM32F411.ioc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4wheelsSTM32F411/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/../4wheelsSTM32F411/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4wheelsSTM32F411/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../4wheelsSTM32F411/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4wheelsSTM32F411/Src/stm32f4xx_hal_msp.c" beforeDir="false" afterPath="$PROJECT_DIR$/../4wheelsSTM32F411/Src/stm32f4xx_hal_msp.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/Backup/gpio.h.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/Backup/main.h.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/Backup/stm32f4xx_hal_conf.h.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/Backup/stm32f4xx_it.h.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/Backup/sys.h.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/Backup/tim.h.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/main.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/stm32f4xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/stm32f4xx_it.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inc/tim.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/tim.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/STM32F3DISCOVERY.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/Backup/gpio.c.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/Backup/main.c.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/Backup/stm32f4xx_hal_msp.c.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/Backup/stm32f4xx_it.c.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/Backup/sys.c.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/Backup/syscalls.c.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/Backup/system_stm32f4xx.c.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/Backup/tim.c.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/gpio.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/stm32f4xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/stm32f4xx_it.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/tim.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/tim.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/led Run.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/led.ioc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/led.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1576516426543</updated>
       <workItem from="1576516428631" duration="626000" />
+      <workItem from="1577346631510" duration="515000" />
     </task>
     <servers />
   </component>
