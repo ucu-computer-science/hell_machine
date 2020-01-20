@@ -60,78 +60,234 @@ static void MX_GPIO_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN PFP */
-inline void send_message(unsigned char message[]) {
-    HAL_UART_Transmit(&huart2, message, strlen((char *) message), 100);
-}
-
-inline void set_car_speed(uint8_t speed) {
-    TIM1->CCR1 = speed;
-}
-
-void start_car(void) {
-    for (int i = 0; i < 50000; i++) {
-        set_car_speed(10);
-    }
-}
 UART_HandleTypeDef huart2;
-
 uint8_t byte[];
-volatile uint8_t enable_car = 0;
-volatile uint8_t enable_back = 0;
+volatile char result;
+volatile int previous_car_speed = 0;
 volatile int car_speed = 0;
-volatile uint8_t previous_car_speed = 0;
 unsigned char enabled[100] = "ENABLED\n";
 unsigned char disabled[100] = "DISABLED\n";
 unsigned char error[100] = "ERROR\n";
+unsigned char left[100] = "LEFT\n";
+unsigned char up[100] = "UP\n";
+unsigned char down[100] = "DOWN\n";
+unsigned char right[100] = "RIGHT\n";
+unsigned char forward[100] = "FORWARD\n";
+unsigned char backward[100] = "BACKWARD\n";
+unsigned char message[100];
+uint8_t direction = 1;
+uint8_t car_enabled = 1;
+uint8_t rotating = 0;
+uint8_t rotating_direction = 0;
 char speed[100];
 
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+void send_message(unsigned char message[]) {
 	__disable_irq();
+    HAL_UART_Transmit(&huart2, message, strlen((char *) message), 100);
+    __enable_irq();
+}
+
+inline void stop_car() {
+	car_enabled = 0;
+	HAL_GPIO_WritePin(BREAK_GPIO_Port, BREAK_Pin, GPIO_PIN_RESET);
+}
+
+inline void unbreak_car(){
+	car_enabled = 1;
+	HAL_GPIO_WritePin(BREAK_GPIO_Port, BREAK_Pin, GPIO_PIN_SET);
+}
+
+inline void set_direction(uint8_t dir){
+	if (dir == 0){
+	HAL_GPIO_WritePin(BACK_RIGHT_GPIO_Port, BACK_RIGHT_Pin, 1);
+	HAL_GPIO_WritePin(BACK_LEFT_GPIO_Port, BACK_LEFT_Pin, 0);
+	}
+	else {
+	HAL_GPIO_WritePin(BACK_RIGHT_GPIO_Port, BACK_RIGHT_Pin, 0);
+	HAL_GPIO_WritePin(BACK_LEFT_GPIO_Port, BACK_LEFT_Pin, 1);
+	}
+}
+
+inline void set_car_speed(uint8_t speed) {
+	if (car_enabled == 0) return;
+    TIM1->CCR1 = speed;
+}
+
+//inline void start_car() {
+//    for (int i = 0; i < 10000; i++) {
+//    	TIM1->CCR1 = 9;
+//    }
+//    TIM1->CCR1 = 0;
+//}
+
+inline void start_compressor(){
+	HAL_GPIO_WritePin(COMPRESSOR_GPIO_Port, COMPRESSOR_Pin, GPIO_PIN_RESET);
+}
+
+inline void stop_compressor(){
+	HAL_GPIO_WritePin(COMPRESSOR_GPIO_Port, COMPRESSOR_Pin, GPIO_PIN_SET);
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
     if (huart->Instance == USART2) {
-        switch (byte[0]) {
-            case 'D': {
-                enable_car = 1;
-                send_message(enabled);
-                break;
-            }
-            case 'd': {
-                enable_car = 0;
-                send_message(disabled);
-                set_car_speed(0);
-                break;
-            }
-            case 'A': {
-                if (enable_car == 0) break;
-                car_speed = (int) byte[1] - '0';
-                break;
-            }
-            case 'X': {
-            	HAL_GPIO_WritePin(COMPRESSOR_GPIO_Port, COMPRESSOR_Pin, GPIO_PIN_RESET);
-            	break;
-            }
-            case 'x': {
-            	HAL_GPIO_WritePin(COMPRESSOR_GPIO_Port, COMPRESSOR_Pin, GPIO_PIN_SET);
-            	break;
-            }
-            default: {
-            	send_message(error);
-            }
-        }
-        if (enable_car == 1) {
-			if (previous_car_speed == 0 and car_speed != 0) start_car();
-			if (car_speed == 0) {
-				set_car_speed(0);
-			}else{
-			set_car_speed(car_speed + 2);
-			previous_car_speed = car_speed;
-			sprintf(speed, "SPEED: %d\n", car_speed);
+    	switch (byte[0]) {
+			case 'D': {
+				__disable_irq();
+				unbreak_car();
+				send_message(enabled);
+				__enable_irq();
+				break;
 			}
-			send_message(speed);
-        }
-        __enable_irq();
-        HAL_UART_Receive_IT(&huart2, byte, 2);
+			case 'd': {
+				__disable_irq();
+				stop_car();
+				send_message(disabled);
+				__enable_irq();
+				break;
+			}
+			case 'X': {
+				__disable_irq();
+				start_compressor();
+				send_message(up);
+				__enable_irq();
+				break;
+			}
+			case 'x': {
+				__disable_irq();
+				stop_compressor();
+				send_message(down);
+				__enable_irq();
+				break;
+			}
+			case 'F':{
+				__disable_irq();
+				direction = 1 ;
+				send_message(forward);
+				__enable_irq();
+				break;
+			case 'B':{
+				__disable_irq();
+				direction = 0 ;
+				send_message(backward);
+				__enable_irq();
+				break;
+			}
+			case 'L':{
+				__disable_irq();
+//				rotating = 1;
+//				rotating_direction = 0;
+				HAL_GPIO_WritePin(TURNR_GPIO_Port, TURNR_Pin, GPIO_PIN_SET);
+				HAL_GPIO_WritePin(TURNL_GPIO_Port, TURNL_Pin, GPIO_PIN_RESET);
+				for(int i = 0; i < 800000; i++){}
+				HAL_GPIO_WritePin(TURNR_GPIO_Port, TURNR_Pin, GPIO_PIN_SET);
+				HAL_GPIO_WritePin(TURNL_GPIO_Port, TURNL_Pin, GPIO_PIN_SET);
+				send_message(left);
+				__enable_irq();
+				break;
+			}
+			case 'R':{
+				__disable_irq();
+//				rotating = 1 ;
+//				rotating_direction = 1;
+				HAL_GPIO_WritePin(TURNR_GPIO_Port, TURNR_Pin, GPIO_PIN_RESET);
+				HAL_GPIO_WritePin(TURNL_GPIO_Port, TURNL_Pin, GPIO_PIN_SET);
+				for(int i = 0; i < 800000; i++){}
+				HAL_GPIO_WritePin(TURNR_GPIO_Port, TURNR_Pin, GPIO_PIN_SET);
+				HAL_GPIO_WritePin(TURNL_GPIO_Port, TURNL_Pin, GPIO_PIN_SET);
+				send_message(right);
+				__enable_irq();
+				break;
+			}
+			case '0':{
+				__disable_irq();
+				car_speed = 0;
+				__enable_irq();
+				break;
+			}
+			case '1':{
+				__disable_irq();
+				car_speed = 1;
+				__enable_irq();
+				break;
+			}
+			case '2':{
+				__disable_irq();
+				car_speed = 2;
+				__enable_irq();
+				break;
+			}
+			case '3':{
+				__disable_irq();
+				car_speed = 3;
+				__enable_irq();
+				break;
+			}
+			case '4':{
+				__disable_irq();
+				car_speed = 4;
+				__enable_irq();
+				break;
+			}
+			case '5':{
+				__disable_irq();
+				car_speed = 5;
+				__enable_irq();
+				break;
+			}
+			case '6':{
+				__disable_irq();
+				car_speed = 6;
+				__enable_irq();
+				break;
+			}
+			case '7':{
+				__disable_irq();
+				car_speed = 7;
+				__enable_irq();
+				break;
+
+			}
+			case '8':{
+				__disable_irq();
+				car_speed = 8;
+				__enable_irq();
+				break;
+			}
+			case '9':{
+				__disable_irq();
+				car_speed = 9;
+				__enable_irq();
+				break;
+			}
+			default: {
+				send_message(error);
+			}
+
+		}
+
+	}
+    __disable_irq();
+	set_direction(direction);
+	set_car_speed(car_speed);
+//	if (rotating == 1 and car_enabled == 1) {
+//		rotating = 0;
+//		if (rotating_direction == 1) {
+//			HAL_GPIO_WritePin(TURNR_GPIO_Port, TURNR_Pin, GPIO_PIN_SET);
+//			HAL_GPIO_WritePin(TURNL_GPIO_Port, TURNL_Pin, GPIO_PIN_RESET);
+//		} else {
+//			HAL_GPIO_WritePin(TURNR_GPIO_Port, TURNR_Pin, GPIO_PIN_SET);
+//			HAL_GPIO_WritePin(TURNL_GPIO_Port, TURNL_Pin, GPIO_PIN_RESET);
+//		}
+//		HAL_GPIO_WritePin(TURNR_GPIO_Port, TURNR_Pin, GPIO_PIN_SET);
+//		HAL_GPIO_WritePin(TURNL_GPIO_Port, TURNL_Pin, GPIO_PIN_SET);
+//	}
+	sprintf(speed, "SPEED: %d\n", car_speed);
+	send_message(speed);
+	__enable_irq();
+    HAL_UART_Receive_IT(&huart2, byte, 1);
     }
 }
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -176,16 +332,25 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-    HAL_UART_Receive_IT(&huart2, byte, 2);
     HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+    /*PreSet all pins*/
     HAL_GPIO_WritePin(COMPRESSOR_GPIO_Port, COMPRESSOR_Pin, GPIO_PIN_SET);
-//  TIM1->CCR1 = 2;
+    HAL_GPIO_WritePin(BACK_RIGHT_GPIO_Port, BACK_RIGHT_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(BACK_LEFT_GPIO_Port, BACK_LEFT_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(BREAK_GPIO_Port, BREAK_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(TURNL_GPIO_Port, TURNL_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(TURNR_GPIO_Port, TURNR_Pin, GPIO_PIN_SET);
+    HAL_UART_Receive_IT(&huart2, byte, 1);
     while (1) {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
         HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_15);
-        HAL_Delay(1000);
+        HAL_Delay(500);
+//        HAL_UART_Transmit(&huart2, result, strlen((char *) result), 100);
+    /*MY MAIN CODE BEGIN*/
+
+	/*MY MAIN CODE END*/
     }
   /* USER CODE END 3 */
 }
@@ -356,10 +521,11 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOE, BACK_Pin|COMPRESSOR_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOE, COMPRESSOR_Pin|BREAK_Pin|BACK_LEFT_Pin|BACK_RIGHT_Pin 
+                          |TURNL_Pin|TURNR_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : PA0 */
   GPIO_InitStruct.Pin = GPIO_PIN_0;
@@ -367,15 +533,17 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : BACK_Pin COMPRESSOR_Pin */
-  GPIO_InitStruct.Pin = BACK_Pin|COMPRESSOR_Pin;
+  /*Configure GPIO pins : COMPRESSOR_Pin BREAK_Pin BACK_LEFT_Pin BACK_RIGHT_Pin 
+                           TURNL_Pin TURNR_Pin */
+  GPIO_InitStruct.Pin = COMPRESSOR_Pin|BREAK_Pin|BACK_LEFT_Pin|BACK_RIGHT_Pin 
+                          |TURNL_Pin|TURNR_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : PD15 */
-  GPIO_InitStruct.Pin = GPIO_PIN_15;
+  /*Configure GPIO pins : PD13 PD14 PD15 */
+  GPIO_InitStruct.Pin = GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

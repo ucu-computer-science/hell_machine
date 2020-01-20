@@ -60,12 +60,20 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define COMPRESSOR_Pin GPIO_PIN_7
+#define COMPRESSOR_GPIO_Port GPIOE
+#define BREAK_Pin GPIO_PIN_8
+#define BREAK_GPIO_Port GPIOE
 #define ENABLE_Pin GPIO_PIN_9
 #define ENABLE_GPIO_Port GPIOE
-#define BACK_Pin GPIO_PIN_10
-#define BACK_GPIO_Port GPIOE
-#define COMPRESSOR_Pin GPIO_PIN_11
-#define COMPRESSOR_GPIO_Port GPIOE
+#define BACK_LEFT_Pin GPIO_PIN_10
+#define BACK_LEFT_GPIO_Port GPIOE
+#define BACK_RIGHT_Pin GPIO_PIN_11
+#define BACK_RIGHT_GPIO_Port GPIOE
+#define TURNL_Pin GPIO_PIN_12
+#define TURNL_GPIO_Port GPIOE
+#define TURNR_Pin GPIO_PIN_13
+#define TURNR_GPIO_Port GPIOE
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
