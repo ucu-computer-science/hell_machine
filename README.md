@@ -36,12 +36,18 @@ All directories are System Workbench for STM32 projects (SW4STM32).
 ![in_action](https://user-images.githubusercontent.com/44115554/71450255-f6dc4680-2766-11ea-945c-3368f94b8e9e.gif)
 
 ## Team Achievements
-- STM32 (STM32F3DISCOVERY, STM32F103 (blue pill)) timers, interucpts, GPIO
+- STM32 (STM32F4DISCOVERY, STM32F3DISCOVERY, STM32F103 (blue pill)) timers, interucpts, GPIO
 - PWM usage ([servo](http://www.ee.ic.ac.uk/pcheung/teaching/DE1_EE/stores/sg90_datasheet.pdf), [step motors](http://eeshop.unl.edu/pdf/Stepper+Driver.pdf))
 - Driver usage ([first](http://grauonline.de/wordpress/?page_id=3122), [second](https://ru.aliexpress.com/item/32950460565.html?spm=a2g0o.detail.1000014.33.280374eaN0gGtG&gps-id=pcDetailBottomMoreOtherSeller&scm=1007.13338.128125.0&scm_id=1007.13338.128125.0&scm-url=1007.13338.128125.0&pvid=e700e67a-c0ac-406b-9729-c6caa390c35d))
 - [Ultrasonic sonar](https://www.roboter-bausatz.de/media/pdf/83/0f/93/JSN-SR04T_outputmode.pdf) usage
+- Accelerometers (I2C)
+- Gyroscope (SPI)
 - Electrisiety workwlow (5V - 12V - 36V) experience
 - Soldering skills
+- ROS basics
+
+## More information
+for more information you can view our [wiki](https://github.com/Myralllka/hell_machine/wiki) page
 
 # Additional
 * [List](https://github.com/Myralllka/hell_machine/wiki/Materials-List) of all used materials of the project<br>
