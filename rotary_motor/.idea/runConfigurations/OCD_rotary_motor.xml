@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration name="OCD rotary_motor" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rotary_motor" TARGET_NAME="rotary_motor.elf" RUN_TARGET_PROJECT_NAME="rotary_motor" RUN_TARGET_NAME="rotary_motor.elf">
-    <openocd gdb-port="3333" telnet-port="4444" board-config="board/stm32f4discovery.cfg" reset-type="INIT" download-type="ALWAYS" />
-    <method v="2">
-      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-    </method>
-  </configuration>
-</component>
