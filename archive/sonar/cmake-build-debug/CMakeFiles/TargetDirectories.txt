@@ -1,3 +1,0 @@
-/home/myralllka/Documents/hell_machine/sonar/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/myralllka/Documents/hell_machine/sonar/cmake-build-debug/CMakeFiles/sonar.elf.dir
-/home/myralllka/Documents/hell_machine/sonar/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,3 +1,0 @@
-/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/CMakeFiles/whils_turn.elf.dir
-/home/myralllka/Documents/hell_machine/whils_turn/cmake-build-debug/CMakeFiles/edit_cache.dir
