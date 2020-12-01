@@ -1,0 +1,20 @@
+/ {
+    leds {
+        w_1_sw: wheel_1_sw { // D10 TODO: PWM
+            gpios = <&gpiod 14 GPIO_ACTIVE_LOW>;
+            label = "Wheel 1 SW";
+        };
+        w_1_brk: wheel_1_brk { // D9
+            gpios = <&gpiog 12 GPIO_ACTIVE_LOW>;
+            label = "Wheel 1 BRK";
+        };
+        w_1_brk: wheel_1_FR { // В8
+            gpios = <&gpiof 3 GPIO_ACTIVE_LOW>;
+            label = "Wheel 1 FR";
+        };
+    };
+    aliases {
+        wheel1-sw = &w_1_sw;
+        wheel1-brk = &w_1_brk;
+    };
+};
