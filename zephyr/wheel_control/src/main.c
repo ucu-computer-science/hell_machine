@@ -58,6 +58,20 @@
 #define WHEEL1_BRK_FLAGS	0
 #endif
 
+#define WHEEL1_FR_NODE DT_ALIAS(wheel1_fr)
+
+#if DT_NODE_HAS_STATUS(WHEEL1_FR_NODE, okay)
+#define WHEEL1_FR    DT_GPIO_LABEL(WHEEL1_FR_NODE, gpios)
+#define WHEEL1_FR_PIN        DT_GPIO_PIN(WHEEL1_FR_NODE, gpios)
+#define WHEEL1_FR_FLAGS    DT_GPIO_FLAGS(WHEEL1_FR_NODE, gpios)
+#else
+/* A build error here means your board isn't set up to blink an LED. */
+#error "Unsupported board: WHEEL1_NODE devicetree alias is not defined"
+#define WHEEL1_FR	    ""
+#define WHEEL1_FR_PIN	0
+#define WHEEL1_FR_FLAGS	0
+#endif
+
 #define SW0_NODE    DT_ALIAS(sw0)
 
 #if DT_NODE_HAS_STATUS(SW0_NODE, okay)
@@ -71,16 +85,16 @@
 #define SW0_GPIO_FLAGS	0
 #endif
 
-void button_pressed(const struct device *dev, struct gpio_callback *cb, uint32_t pins) {
+//void button_pressed(const struct device *dev, struct gpio_callback *cb, uint32_t pins) {
 //    printk("Button pressed at %" PRIu32 "\n");
-}
+//}
 
 static struct gpio_callback button_cb_data;
 
 void main(void) {
-    const struct device *led, *wheel1_sw, *wheel1_brk;
+    const struct device *led, *wheel1_sw, *wheel1_brk, *wheel1_fr;
     const struct device *button;
-    bool led_is_on = true;
+    bool led_is_on;
     int ret;
 
     button = device_get_binding(SW0_GPIO_LABEL);
@@ -91,12 +105,12 @@ void main(void) {
     if (ret != 0) {
         return;
     }
-    ret = gpio_pin_interrupt_configure(button, SW0_GPIO_PIN, GPIO_INT_EDGE_TO_ACTIVE);
-    if (ret != 0) {
-        return;
-    }
-    gpio_init_callback(&button_cb_data, button_pressed, BIT(SW0_GPIO_PIN));
-    gpio_add_callback(button, &button_cb_data);
+//    ret = gpio_pin_interrupt_configure(button, SW0_GPIO_PIN, GPIO_INT_EDGE_TO_ACTIVE);
+//    if (ret != 0) {
+//        return;
+//    }
+//    gpio_init_callback(&button_cb_data, button_pressed, BIT(SW0_GPIO_PIN));
+//    gpio_add_callback(button, &button_cb_data);
 
 
     led = device_get_binding(LED0);
@@ -121,14 +135,23 @@ void main(void) {
     if (wheel1_brk == NULL) {
         return;
     }
-    ret = gpio_pin_configure(wheel1_brk, WHEEL1_BRK_PIN, GPIO_OUTPUT_ACTIVE | WHEEL1_BRK_FLAGS);
+    ret = gpio_pin_configure(wheel1_brk, WHEEL1_BRK_PIN, GPIO_OUTPUT_INACTIVE | WHEEL1_BRK_FLAGS);
     if (ret < 0) {
         return;
     }
 
-    ///const struct device *led, *wheel1_sw, *wheel1_brk;
+    wheel1_fr = device_get_binding(WHEEL1_FR);
+    if (wheel1_fr == NULL) {
+        return;
+    }
+    ret = gpio_pin_configure(wheel1_fr, WHEEL1_FR_PIN, GPIO_OUTPUT_INACTIVE | WHEEL1_FR_FLAGS);
+    if (ret < 0) {
+        return;
+    }
+
+    led_is_on = false;
+    gpio_pin_set(wheel1_sw, WHEEL1_SW_PIN, (int) led_is_on);
     while (1) {
-//        gpio_pin_set(wheel1, WHEEL1_PIN, (int) led_is_on) != 0);
         if (gpio_pin_get(button, SW0_GPIO_PIN) != led_is_on) {
             k_msleep(50);
             if (gpio_pin_get(button, SW0_GPIO_PIN) != led_is_on) {

@@ -9,5 +9,5 @@ cd UCU_hell_machine/zephyr/blinky_pwm
 source ~/zephyrproject/zephyr/zephyr-env.sh # source your local zephyr env
 cmake -B build -GNinja -DBOARD=nucleo_h743zi
 ninja -C build
-ninja flash # flash to board
+ninja flash -C build # flash to board
 ```
