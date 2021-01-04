@@ -8,7 +8,7 @@
 #include <device.h>
 #include <devicetree.h>
 #include <drivers/gpio.h>
-#include <sys/util.h>
+//#include <sys/util.h>
 
 /* 1000 msec = 1 sec */
 #define SLEEP_TIME_MS   20
