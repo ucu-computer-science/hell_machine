@@ -1,0 +1,36 @@
+/ {
+    leds {
+        w_1_sw: wheel_1_sw { // D10 TODO: PWM
+            gpios = <&gpiod 14 GPIO_ACTIVE_HIGH>;
+            label = "Wheel 1 SW";
+        };
+        w_1_brk: wheel_1_brk { // D9
+            gpios = <&gpiod 15 GPIO_ACTIVE_HIGH>;
+            label = "Wheel 1 BRK";
+        };
+        w_1_fr: wheel_1_fr { // D8
+            gpios = <&gpiof 12 GPIO_ACTIVE_HIGH>;
+            label = "Wheel 1 FR";
+        };
+        w_1_tr_r: wheel_1_tr_r { // D2
+            gpios = <&gpiof 15 GPIO_ACTIVE_HIGH>;
+            label = "Wheel 1 turn Right";
+        };
+        w_1_tr_l: wheel_1_tr_l { // D3
+            gpios = <&gpioe 13 GPIO_ACTIVE_HIGH>;
+            label = "Wheel 1 turn Left";
+        };
+        compr_1: car_compressor_1 { // D4
+            gpios = <&gpiof 14 GPIO_ACTIVE_HIGH>;
+            label = "Compressor activator";
+        };
+    };
+    aliases {
+        wheel1-sw = &w_1_sw;
+        wheel1-brk = &w_1_brk;
+        wheel1-fr = &w_1_fr;
+        wheel1-turn-r = &w_1_tr_r;
+        wheel1-turn-l = &w_1_tr_l;
+        compressor = &compr_1;
+    };
+};
