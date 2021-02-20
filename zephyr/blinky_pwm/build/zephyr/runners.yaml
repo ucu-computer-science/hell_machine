@@ -1,0 +1,34 @@
+# Available runners configured by board.cmake.
+runners:
+- openocd
+- jlink
+
+# Default flash runner if --runner is not given.
+flash-runner: openocd
+
+# Default debug runner if --runner is not given.
+debug-runner: openocd
+
+# Common runner configuration values.
+config:
+  board_dir: /home/fenix/zephyrproject/zephyr/boards/arm/nucleo_h743zi
+  # Build outputs:
+  elf_file: zephyr.elf
+  hex_file: zephyr.hex
+  bin_file: zephyr.bin
+  # Host tools:
+  gdb: /opt/zephyr-sdk-0.11.3/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb
+  openocd: /opt/zephyr-sdk-0.11.3/sysroots/x86_64-pokysdk-linux/usr/bin/openocd
+  openocd_search: /opt/zephyr-sdk-0.11.3/sysroots/x86_64-pokysdk-linux/usr/share/openocd/scripts
+
+# Runner specific arguments
+args:
+  openocd:
+    - --cmd-load
+    - flash write_image erase
+    - --cmd-verify
+    - verify_image
+  jlink:
+    - --dt-flash=y
+    - --device=STM32H743ZI
+    - --speed=4000

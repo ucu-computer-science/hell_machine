@@ -1,0 +1,26 @@
+/home/fenix/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7660.37/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/fenix/UCU_hell_machine/zephyr/blinky_pwm
+Including boilerplate (Zephyr base (cached)): /home/fenix/zephyrproject/zephyr/cmake/app/boilerplate.cmake
+-- Application: /home/fenix/UCU_hell_machine/zephyr/blinky_pwm
+-- Zephyr version: 2.4.99 (/home/fenix/zephyrproject/zephyr)
+-- Found west (found suitable version "0.8.0", minimum required is "0.7.1")
+-- Board: nucleo_h743zi
+-- Cache files will be written to: /home/fenix/.cache/zephyr
+-- Found toolchain: zephyr (/opt/zephyr-sdk-0.11.3)
+-- Found dtc: /opt/zephyr-sdk-0.11.3/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.5.0", minimum required is "1.4.6")
+-- Found BOARD.dts: /home/fenix/zephyrproject/zephyr/boards/arm/nucleo_h743zi/nucleo_h743zi.dts
+-- Generated zephyr.dts: /home/fenix/UCU_hell_machine/zephyr/blinky_pwm/cmake-build-debug/zephyr/zephyr.dts
+-- Generated devicetree_unfixed.h: /home/fenix/UCU_hell_machine/zephyr/blinky_pwm/cmake-build-debug/zephyr/include/generated/devicetree_unfixed.h
+Parsing /home/fenix/zephyrproject/zephyr/Kconfig
+Loaded configuration '/home/fenix/UCU_hell_machine/zephyr/blinky_pwm/cmake-build-debug/zephyr/.config'
+No change to configuration in '/home/fenix/UCU_hell_machine/zephyr/blinky_pwm/cmake-build-debug/zephyr/.config'
+No change to Kconfig header in '/home/fenix/UCU_hell_machine/zephyr/blinky_pwm/cmake-build-debug/zephyr/include/generated/autoconf.h'
+CMake Warning at /home/fenix/zephyrproject/zephyr/CMakeLists.txt:1373 (message):
+  
+
+        The CMake build type was set to 'Debug', but the optimization flag was set to '-Os'.
+        This may be intentional and the warning can be turned off by setting the CMake variable 'NO_BUILD_TYPE_WARNING'
+
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/fenix/UCU_hell_machine/zephyr/blinky_pwm/cmake-build-debug
